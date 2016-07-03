@@ -3,7 +3,9 @@
   "version": "3.0.1",
   "description": "フロントエンド開発の効率をあげるフルスタックテンプレート",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^15.0.2"
+  },
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "babel-core": "^6.5.2",
@@ -29,6 +31,7 @@
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.1.0",
+    "gulp-react": "^3.1.0",
     "gulp-sass": "^2.2.0",
     "gulp-sass-lint": "^1.1.1",
     "gulp-sourcemaps": "^1.6.0",

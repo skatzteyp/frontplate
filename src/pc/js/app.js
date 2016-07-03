@@ -1,5 +1,5 @@
-import hack from './module/hack.js';
+import hack from './module/_hack.js';
 hack();
 
-import smoothScroll from './module/smooth-scroll.js';
+import smoothScroll from './module/_smooth-scroll.js';
 smoothScroll();
