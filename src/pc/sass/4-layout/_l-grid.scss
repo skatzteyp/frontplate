@@ -1,0 +1,220 @@
+/*
+#overview
+l-grid
+*/
+
+/*
+#styleguide
+l-grid
+style comment.
+
+```
+<div class="l-grid">
+	<ul class="l-grid-inner">
+		<li class="l-grid-item">
+			<img src="http://placekitten.com/200/200" alt="">
+		</li>
+		<li class="l-grid-item">
+			<img src="http://placekitten.com/200/200" alt="">
+		</li>
+		<li class="l-grid-item">
+			<img src="http://placekitten.com/200/200" alt="">
+		</li>
+	</ul>
+</div>
+
+<div class="l-grid l-grid-col3">
+	<ul class="l-grid-inner">
+		<li class="l-grid-item">
+			<img src="http://placekitten.com/200/200" alt="">
+		</li>
+		<li class="l-grid-item">
+			<img src="http://placekitten.com/200/200" alt="">
+		</li>
+		<li class="l-grid-item">
+			<img src="http://placekitten.com/200/200" alt="">
+		</li>
+	</ul>
+</div>
+
+<div class="l-grid l-grid-col6 l-grid-lg-col4 l-grid-md-col3 l-grid-sm-col2">
+	<ul class="l-grid-inner">
+		<li class="l-grid-item">
+			<img src="http://placekitten.com/200/200" alt="">
+		</li>
+		<li class="l-grid-item">
+			<img src="http://placekitten.com/200/200" alt="">
+		</li>
+		<li class="l-grid-item">
+			<img src="http://placekitten.com/200/200" alt="">
+		</li>
+		<li class="l-grid-item">
+			<img src="http://placekitten.com/200/200" alt="">
+		</li>
+		<li class="l-grid-item">
+			<img src="http://placekitten.com/200/200" alt="">
+		</li>
+		<li class="l-grid-item">
+			<img src="http://placekitten.com/200/200" alt="">
+		</li>
+	</ul>
+</div>
+```
+*/
+
+.l-grid {
+    text-align: center;
+    .l-grid-inner {
+        font-size: 0;
+        letter-spacing: 0;
+    }
+    .l-grid-item {
+        display: inline-block;
+        vertical-align: top;
+        font-size: $base-font-size + px;
+    }
+
+    //Modifier column
+    &.l-grid-col2 {
+        .l-grid-item {
+            width: 50%;
+            @include androidWidth(50%);
+        }
+    }
+    &.l-grid-col3 {
+        .l-grid-item {
+            width: 33.3333%;
+        }
+    }
+    &.l-grid-col4 {
+        .l-grid-item {
+            width: 25%;
+            @include androidWidth(25%);
+        }
+    }
+    &.l-grid-col5 {
+        .l-grid-item {
+            width: 20%;
+            @include androidWidth(20%);
+        }
+    }
+    &.l-grid-col6 {
+        .l-grid-item {
+            width: 16.6666%;
+        }
+    }
+
+    /* Break point large */
+    @media all and (max-width: $break-large) {
+
+        &.l-grid-lg-col1 {
+            .l-grid-item {
+                width: 100%;
+            }
+        }
+        &.l-grid-lg-col2 {
+            .l-grid-item {
+                width: 50%;
+                @include androidWidth(50%);
+            }
+        }
+        &.l-grid-lg-col3 {
+            .l-grid-item {
+                width: 33.3333%;
+            }
+        }
+        &.l-grid-lg-col4 {
+            .l-grid-item {
+                width: 25%;
+                @include androidWidth(25%);
+            }
+        }
+        &.l-grid-lg-col5 {
+            .l-grid-item {
+                width: 20%;
+                @include androidWidth(20%);
+            }
+        }
+        &.l-grid-lg-col6 {
+            .l-grid-item {
+                width: 16.6666%;
+            }
+        }
+    }
+
+    /* Break point medium */
+    @media all and (max-width: $break-medium) {
+
+        &.l-grid-md-col1 {
+            .l-grid-item {
+                width: 100%;
+            }
+        }
+        &.l-grid-md-col2 {
+            .l-grid-item {
+                width: 50%;
+                @include androidWidth(50%);
+            }
+        }
+        &.l-grid-md-col3 {
+            .l-grid-item {
+                width: 33.3333%;
+            }
+        }
+        &.l-grid-md-col4 {
+            .l-grid-item {
+                width: 25%;
+                @include androidWidth(25%);
+            }
+        }
+        &.l-grid-md-col5 {
+            .l-grid-item {
+                width: 20%;
+                @include androidWidth(20%);
+            }
+        }
+        &.l-grid-md-col6 {
+            .l-grid-item {
+                width: 16.6666%;
+            }
+        }
+    }
+
+    /* Break point small */
+    @media all and (max-width: $break-small) {
+
+        &.l-grid-sm-col1 {
+            .l-grid-item {
+                width: 100%;
+            }
+        }
+        &.l-grid-sm-col2 {
+            .l-grid-item {
+                width: 50%;
+                @include androidWidth(50%);
+            }
+        }
+        &.l-grid-sm-col3 {
+            .l-grid-item {
+                width: 33.3333%;
+            }
+        }
+        &.l-grid-sm-col4 {
+            .l-grid-item {
+                width: 25%;
+                @include androidWidth(25%);
+            }
+        }
+        &.l-grid-sm-col5 {
+            .l-grid-item {
+                width: 20%;
+                @include androidWidth(20%);
+            }
+        }
+        &.l-grid-sm-col6 {
+            .l-grid-item {
+                width: 16.6666%;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+/*
+l-footer
+*/
+
+.l-footer {
+    background-color: $color-default;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+
+    //Modifier margin
+    &.l-footer-mt {
+        margin-top: 50px;
+    }
+    &.l-footer-mt-sm {
+        margin-top: 30px;
+    }
+    &.l-footer-mt {
+        margin-top: 70px;
+    }
+}

@@ -1,0 +1,28 @@
+/*
+l-header
+*/
+
+.l-header {
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 2px solid $color-base;
+
+    .l-header-left {
+        float: left;
+    }
+    .l-header-right {
+        float: right;
+        width: 50%;
+    }
+
+    //Modifier margin
+    &.l-header-mb {
+        margin-bottom: 50px;
+    }
+    &.l-header-mb-sm {
+        margin-bottom: 30px;
+    }
+    &.l-header-mb-l {
+        margin-bottom: 70px;
+    }
+}

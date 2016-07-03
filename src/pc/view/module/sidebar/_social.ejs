@@ -1,0 +1,16 @@
+<%
+var footerSnsArray = [
+    'facebook', 'instagram', 'twitter'
+];
+%>
+<div class="social l-grid l-grid-col2">
+    <ul class="l-grid-inner">
+        <% for(var iFsa=0; iFsa< footerSnsArray.length; iFsa++) { %>
+        <li class="l-grid-item">
+            <a href="">
+                <i class="sprite-sns-2x sprite-sns-<%= footerSnsArray[iFsa] %>"></i>
+            </a>
+        </li>
+        <% } %>
+    </ul>
+</div>

@@ -1,0 +1,40 @@
+/*
+#overview
+page-top
+
+comment
+*/
+
+/*
+#styleguide
+Pagetop
+
+style comment.
+
+```
+<a class="page-top js-scroll" href="#js-body">Top</a>
+```
+*/
+
+.page-top {
+    display: block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 20px;
+    color: #fff;
+    background-color: $color-main;
+    border-radius: 50%;
+    box-shadow: 0 5px 0 darken($color-main, 20%);
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    transition-property: box-shadow, transform;
+    transition-duration: $duration;
+    transition-timing-function: $easing;
+    &:hover {
+        text-decoration: none;
+        transform: translate3d(0, 5px, 0);
+        box-shadow: 0 0 0 darken($color-main,20%);
+    }
+}
