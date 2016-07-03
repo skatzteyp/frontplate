@@ -1,0 +1,23 @@
+/*
+#styleguide
+sprite-sns-2x
+
+```
+<i class="sprite-sns-2x sprite-sns-facebook"></i>
+<i class="sprite-sns-2x sprite-sns-instagram"></i>
+<i class="sprite-sns-2x sprite-sns-twitter"></i>
+```
+*/
+
+$sprite-sns-facebook: 0px 0px 0px 0px 260px 254px 526px 514px '../images/sprite-sns-2x.png' sprite-sns-facebook;
+$sprite-sns-instagram: 266px 0px -266px 0px 260px 254px 526px 514px '../images/sprite-sns-2x.png' sprite-sns-instagram;
+$sprite-sns-twitter: 0px 260px 0px -260px 260px 254px 526px 514px '../images/sprite-sns-2x.png' sprite-sns-twitter;
+
+
+$sprite-sns-2x: ($sprite-sns-facebook,$sprite-sns-instagram,$sprite-sns-twitter,);
+@each $sprite in $sprite-sns-2x {
+    $name: nth($sprite,10);
+    .sprite-sns-2x.#{$name} {
+        @include sprite($sprite,0.5);
+    }
+}

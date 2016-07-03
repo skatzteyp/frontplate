@@ -1,9 +1,48 @@
-@import 'setting';
+/*
+* 1-setting
+*/
+@import "1-setting/color";
+@import "1-setting/config";
+@import "1-setting/font";
 
-//@import 'base/sanitize';
-//@import 'base/reset';
-//@import 'base/normalize';
-@import 'base/mixin';
-@import 'base/base';
-@import 'layout/layout';
-@import 'sprites/icon';
+/*
+* 2-mixin
+*/
+@import "2-mixin/mixin";
+
+/*
+* 3-base
+*/
+@import "3-base/reset";
+@import "3-base/generic";
+
+/*
+* 4-layout
+*/
+@import "4-layout/l-container";
+@import "4-layout/l-footer";
+@import "4-layout/l-header";
+@import "4-layout/l-main";
+@import "4-layout/l-sidebar";
+@import "4-layout/l-grid";
+@import "4-layout/l-shelf";
+
+/*
+* 5-module
+*/
+@import "5-module/icon/icon";
+@import "5-module/sprites/sprite-sns-2x";
+@import "5-module/logo";
+@import "5-module/media";
+@import "5-module/sns";
+@import "5-module/nav";
+@import "5-module/button";
+@import "5-module/banner";
+@import "5-module/social";
+@import "5-module/page-top";
+
+/*
+* 6-utility
+*/
+@import "6-utility/utility";
+

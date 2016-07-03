@@ -1,0 +1,31 @@
+/*
+* Variables except color
+*/
+
+// These variable are used in mixin
+$default-scale: 1;
+$gutter: 0;
+
+//break point
+$break-small: 480px;
+$break-medium: 780px;
+$break-large: 1024px;
+
+//path
+$path-image: "../images/";
+$path-font: "../fonts/";
+
+//font
+$base-font-size: 16;
+$base-line-height: 1.6;
+$base-letter-spacing: 0.02em;
+
+//animation
+$duration: .25s;
+$easing: ease-in-out;
+$delay: .35s;
+
+//etc
+$site-size: 1080px + 60;
+$z-max: 10;
+$opacity: .8;

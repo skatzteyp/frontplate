@@ -1,0 +1,33 @@
+<%
+var navArray = [ "home", "About", "Service", "Contact" ];
+%>
+
+<!--start header-->
+<header class="l-header l-header-mb">
+    <div class="l-container u-clear">
+
+        <div class="l-header-left">
+            <a class="logo" href="./">
+                <img src="images/logo.png" width="253" height="52" alt="LIG inc."/>
+            </a>
+        </div>
+
+
+        <div class="l-header-right">
+            <nav class="nav">
+                <div class="nav-inner l-grid l-grid-col4">
+                    <ul class="nav-list l-grid-inner">
+                        <% for(var iNav=0; iNav< navArray.length; iNav++) { %>
+                        <li class="nav-item l-grid-item">
+                            <a class="nav-link<% if(iNav === 0){ %> nav-link-current<% } %>" href="#">
+                                <%= navArray[iNav] %>
+                            </a>
+                        </li>
+                        <% } %>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<!--end header-->
