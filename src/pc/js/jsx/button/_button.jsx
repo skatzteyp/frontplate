@@ -1,9 +1,12 @@
 class SampleComponent extends React.Component {
     render() {
+        const {text} = this.props;
         return (
-            <div>
-            This article is written by leader22
-            </div>
+            <button>{text}</button>
         );
     }
 }
+
+const $sample = document.getElementById('js-sample');
+
+ReactDOM.render(<SampleComponent text="button" />, $sample);
