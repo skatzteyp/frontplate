@@ -1,2 +1,4 @@
 src/pc/lib/*
 src/sp/lib/*
+src/pc/js/vendor.js
+src/sp/js/vendor.js
