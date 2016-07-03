@@ -4,7 +4,8 @@
   "description": "フロントエンド開発の効率をあげるフルスタックテンプレート",
   "main": "gulpfile.js",
   "dependencies": {
-    "react": "^15.0.2"
+    "react": "^15.0.2",
+    "react-dom": "^15.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.3",
@@ -19,6 +20,7 @@
     "ejs": "^2.4.1",
     "eslint": "^2.1.0",
     "eslint-loader": "^1.3.0",
+    "eslint-plugin-react": "^5.2.2",
     "espower-loader": "^1.0.0",
     "extend": "^3.0.0",
     "gulp": "^3.9.1",
