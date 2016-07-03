@@ -1,14 +1,13 @@
 # frontplate
 
-フロントエンド開発の効率を上げるテンプレート
-
 ** Version3.1.0 Released!! **
 
-※ npm3でのみ動作確認しています
+##Reccoment environment
 
-[CHANGELOG](https://github.com/frontainer/frontplate/blob/master/CHANGELOG.md)
-
-[過去バージョン](https://github.com/frontainer/frontplate/releases)
++ frontplate v3.1.0
++ Node.js v4.4.7
++ npm 3.10.3
++ gulp 3.9.1
 
 ## npmのアップデート
 
