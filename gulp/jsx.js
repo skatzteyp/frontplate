@@ -19,6 +19,7 @@ let react = require('gulp-react');
  */
 gulp.task('jsx', () => {
     return gulp.src(config.path.jsx.src)
+        .pipe($.plumber({errorHandler: $.notify.onError('<%= error.message %>')}))
         .pipe(react())
         .pipe(gulp.dest(config.path.jsx.dest));
 });
