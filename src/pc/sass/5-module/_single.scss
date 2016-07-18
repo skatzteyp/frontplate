@@ -1,0 +1,251 @@
+.single {
+
+    //    single-header
+    .single-header {
+        .single-header-eyecatch {
+            min-height: 200px;
+            position: relative;
+            margin-bottom: 18px;
+            > img {
+                width: 100%;
+                height: auto;
+                position: relative;
+                z-index: 1;
+            }
+        }
+        .single-header-category {}
+        .single-header-labels {
+            position: absolute;
+            z-index: 2;
+            right: 5px;
+            bottom: 5px;
+            font-size: 0;
+            margin: 0 -1px;
+        }
+        .single-header-meta {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            margin-bottom: 6px;
+        }
+        .single-header-author {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .single-header-date {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: right;
+            > time {
+                font-family: $font-en;
+                font-size: 14px;
+            }
+        }
+        .single-heading {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    }
+
+//    single-body
+    .single-body {
+        p, div:not([class]) {
+            margin: 30px 0;
+        }
+
+        b, em, strong {
+            font-weight: bold;
+        }
+        i:not([class]) {
+            font-style: italic;
+        }
+        u {
+            transition-duration: underline;
+        }
+
+        h2 {
+            font-size: 25px;
+            font-weight: bold;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #000;
+            margin: 60px 0;
+        }
+
+        h3, h4, h5, h6 {
+            font-size: 20px;
+            font-weight: bold;
+            padding-bottom: 10px;
+            border-bottom: 2px dotted #000;
+            margin: 40px 0;
+        }
+
+        iframe {
+            display: block;
+            max-width: 100%;
+            margin: 30px auto;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 30px 0;
+        }
+
+        // box
+        dl:not([class]) {
+            background-color: #eee;
+            padding: 20px;
+            margin: 30px 0;
+            > dt {
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+            //> dd {}
+        }
+
+        //introduce
+        .character {
+            background: #eee;
+            padding: 20px;
+            margin: 30px 0;
+            display: table;
+
+            dt,
+            dd {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            dt {
+                max-width: 100px;
+                > img {
+                    width: 100px;
+                    height: auto;
+                    max-width: 100px;
+                    max-height: 100px;
+                    margin: 0;
+                    border-radius: 50%;
+                    border: 2px solid #000;
+                    padding: 10px;
+                    background-color: #fff;
+                }
+            }
+            dd {
+                padding-left: 20px;
+                > b, em, strong {
+                    display: block;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        a {
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+            &[target="_blank"] {
+                display: inline-block;
+                position: relative;
+                padding-left: 35px;
+                &:before, &:after {
+                    content: "";
+                    display: block;
+                    width: 15px;
+                    height: 10px;
+                    border: 2px solid $color-main;
+                    background-color: #fff;
+                    position: absolute;
+                }
+                &:before {
+                    left: 5px;
+                    top: 2px;
+                }
+                &:after {
+                    left: 12px;
+                    top: 9px;
+                }
+            }
+        }
+
+        ul, ol {
+            margin: 30px 0;
+            li {
+                margin-bottom: 10px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        ul {
+            li {
+                position: relative;
+                padding-left: 20px;
+                &:before {
+                    content: "";
+                    background-color: #000;
+                    display: block;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 7px;
+                    left: 0;
+                }
+                ul {
+                    margin: 5px 0 5px 10px;
+                }
+                li:before {
+                    background-color: #ccc;
+                }
+            }
+        }
+
+        ol {
+            padding-left: 20px;
+            li {
+                list-style: decimal;
+                position: relative;
+            }
+
+        }
+
+        blockquote {
+            border: 1px solid #ccc;
+            position: relative;
+            padding: 20px 65px;
+            margin: 20px 0;
+
+            &:before {
+                content: "”";
+                font-size: 100px;
+                color: #ccc;
+                position: absolute;
+                top: 5px;
+                left: 10px;
+            }
+            > p {
+                margin: 0;
+            }
+
+            a, a[target="_blank"] {
+                font-size: 14px;
+                text-decoration: underline;
+                padding-left: 0;
+                &:before,
+                &:after {
+                    visibility: hidden;
+                }
+            }
+            > small {
+                display: block;
+                margin-top: 6px;
+                font-size: 14px;
+                color: #ccc;
+            }
+        }
+    }
+}
