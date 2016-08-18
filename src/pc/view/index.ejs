@@ -1,3 +1,4 @@
+<% include const/_const %>
 <%
 var id = "index";
 var title = "";
@@ -5,40 +6,39 @@ var description = "sample text,sample text";
 var keywords = "word1,word2,word3";
 var type = "blog";
 %>
-
 <% include metadata/_head %>
 <% include layout/_l-header %>
 
-    <!--start l-contents-->
-    <div class="l-container u-clear">
+<!--start l-contents-->
+<div class="l-container u-clear">
 
-        <!--start l-main-->
-        <main class="l-main">
+    <!--start l-main-->
+    <main class="l-main">
 
-            <div class="l-shelf l-shelf-mb">
-                <ul class="l-shelf-list">
-                    <% for(var iMedia=0; iMedia< 10; iMedia++) { %>
-                    <li>
-                        <% include module/_media %>
-                    </li>
-                    <% } %>
-                </ul>
-                <div class="l-shelf-button">
-                    <a class="button" href="">
-                        <span class="button-text">Button more</span>
-                    </a>
-                </div>
+        <div class="l-shelf l-shelf-mb">
+            <ul class="l-shelf-list">
+                <% for(var iMedia = 0; iMedia < mediaArray.length; iMedia++) { %>
+                <li>
+                    <% include module/_media %>
+                </li>
+                <% } %>
+            </ul>
+            <div class="l-shelf-button">
+                <a class="button" href="">
+                    <span class="button-text">Button more</span>
+                </a>
             </div>
+        </div>
 
-            <% include module/_sns %>
+        <% include module/_sns %>
 
-        </main>
-        <!--end l-main-->
+    </main>
+    <!--end l-main-->
 
-        <% include layout/_l-sidebar %>
+    <% include layout/_l-sidebar %>
 
-    </div>
-    <!--end l-contents-->
+</div>
+<!--end l-contents-->
 
 <% include layout/_l-footer %>
 <% include metadata/_script %>
