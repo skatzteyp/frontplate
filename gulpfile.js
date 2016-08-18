@@ -13,6 +13,8 @@ let config = require('./gulp/config');
 gulp.task('watch', () => {
     gulp.watch(config.path.ejs.watch, ['ejs']);
     gulp.watch(config.path.html.src, ['html']);
+    gulp.watch(config.path.html.src, ['prettify']);
+    gulp.watch(config.path.jsx.src, ['jsx']);
     gulp.watch(config.path.style.watch, ['style']);
     gulp.watch(config.path.sprite.watch, ['sprite','style', 'copy','styleguide']);
 
@@ -30,7 +32,15 @@ gulp.task('watch', () => {
  * ビルドタスク
  */
 gulp.task('build', ['clean'], (callback) => {
-    return runSequence('sprite', ['ejs', 'script', 'style', 'copy','styleguide'], callback);
+    return runSequence('sprite', ['ejs', 'jsx', 'script', 'style', 'copy','styleguide'], callback);
+});
+
+/**
+ * releaseへの出力タスク
+ */
+gulp.task('release', () => {
+    return gulp.src(config.dist + '/**/*')
+        .pipe(gulp.dest(config.release));
 });
 
 /**
@@ -38,7 +48,7 @@ gulp.task('build', ['clean'], (callback) => {
  */
 gulp.task('production', (callback) => {
     config.IS_PRODUCTION = true;
-    return runSequence('build','test',callback);
+    return runSequence('build','test', 'release', callback);
 });
 
 /**
