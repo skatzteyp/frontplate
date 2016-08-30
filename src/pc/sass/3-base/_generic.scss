@@ -6,8 +6,15 @@ br {
 }
 
 ::selection {
-    background: $color-border;
+    background: $color-main;
     color: #fff;
+}
+
+input,
+textarea {
+    &::selection {
+        color: $color-default;
+    }
 }
 
 html {
