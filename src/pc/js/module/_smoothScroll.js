@@ -20,14 +20,17 @@ export default function smoothScroll() {
         event.preventDefault();
     };
 
-    $('a.js-scroll').click(function (event) {
-        if (!$(this).hasClass('nolink')) {
-            let id = $(this).attr('href'),
+    let handleClick = (e) => {
+        console.log(e.currentTarget);
+        if (!$(e.currentTarget).hasClass('nolink')) {
+            let id = $(e.currentTarget).attr('href'),
                 target = $(id).offset().top;
             mStopOn();
             $('html, body').animate({scrollTop: target - HEADER_HEIGHT}, 500, mStopOff);
-            event.preventDefault();
+            e.preventDefault();
             return false;
         }
-    });
+    };
+
+    $('a.js-scroll').on('click', handleClick);
 }
