@@ -21,14 +21,12 @@ export default function smoothScroll() {
     };
 
     let handleClick = (e) => {
-        console.log(e.currentTarget);
         if (!$(e.currentTarget).hasClass('nolink')) {
             let id = $(e.currentTarget).attr('href'),
                 target = $(id).offset().top;
             mStopOn();
             $('html, body').animate({scrollTop: target - HEADER_HEIGHT}, 500, mStopOff);
             e.preventDefault();
-            return false;
         }
     };
 
