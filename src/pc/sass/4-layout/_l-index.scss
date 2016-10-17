@@ -1,14 +1,12 @@
-/*
-#overview
-l-shelf
-*/
+.l-index {
 
-.l-shelf {
-    .l-shelf-list {
+    &-list {
+
         > li {
             padding-bottom: 20px;
             border-bottom: 1px solid $color-base;
             margin-bottom: 20px;
+
             &:last-child {
                 padding-bottom: 0;
                 border-bottom: 0;
@@ -16,19 +14,9 @@ l-shelf
             }
         }
     }
-    .l-shelf-button {
+
+    &-button {
         margin-top: 40px;
         text-align: center;
-    }
-
-    //Modifier margin
-    &.l-shelf-mb {
-        margin-bottom: 40px;
-    }
-    &.l-shelf-mb-sm {
-        margin-bottom: 30px;
-    }
-    &.l-shelf-mb-l {
-        margin-bottom: 50px;
     }
 }

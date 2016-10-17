@@ -1,16 +1,12 @@
-/*
-l-header
-*/
-
 .l-header {
     background-color: #fff;
     padding: 20px;
     border-bottom: 2px solid $color-base;
 
-    .l-header-left {
+    &-left {
         float: left;
     }
-    .l-header-right {
+    &-right {
         float: right;
         width: 50%;
     }

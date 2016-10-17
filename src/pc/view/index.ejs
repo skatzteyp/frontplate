@@ -2,7 +2,7 @@
 <%
 var id = "index";
 var title = "";
-var description = "sample text,sample text";
+var description = "sample text,sample tex";
 var keywords = "word1,word2,word3";
 var type = "blog";
 %>
@@ -15,22 +15,20 @@ var type = "blog";
     <!--start l-main-->
     <main class="l-main">
 
-        <div class="l-shelf l-shelf-mb">
-            <ul class="l-shelf-list">
+        <div class="l-index">
+            <ul class="l-index-list">
                 <% for(var iMedia = 0; iMedia < mediaArray.length; iMedia++) { %>
                 <li>
                     <% include module/_media %>
                 </li>
                 <% } %>
             </ul>
-            <div class="l-shelf-button">
+            <div class="l-index-button">
                 <a class="button" href="">
                     <span class="button-text">Button more</span>
                 </a>
             </div>
         </div>
-
-        <% include module/_sns %>
 
     </main>
     <!--end l-main-->
