@@ -36,10 +36,12 @@ sns
 */
 
 .sns {
-    .sns-inner {
+    text-align: center;
+
+    &-inner {
         margin: -5px;
     }
-    .sns-item {
+    &-item {
         vertical-align: bottom;
         padding: 5px;
     }

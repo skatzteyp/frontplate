@@ -1,0 +1,49 @@
+.single-header {
+
+    &-category {
+        margin-bottom: 10px;
+    }
+
+    &-eyecatch {
+        min-height: 400px;
+        position: relative;
+
+        > img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &-meta {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+        margin-bottom: 20px;
+    }
+    &-author {
+        display: table-cell;
+        vertical-align: middle;
+        > img {
+            vertical-align: middle;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        > span {
+            vertical-align: middle;
+            font-size: 15px;
+        }
+    }
+    &-date {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: right;
+        > time {
+            font-family: $font-en;
+            font-size: 15px;
+        }
+    }
+    &-heading {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+}
