@@ -43,19 +43,24 @@ nav
 
 .nav {
     padding: 8px 0;
-    .nav-inner {}
-    .nav-list {
+
+    &-inner {}
+
+    &-list {
         margin: 0 -10px;
     }
-    .nav-item {
+
+    &-item {
         padding: 0 10px;
     }
-    .nav-link {
+
+    &-link {
         display: block;
         padding: 10px;
         background-color: $color-base;
         text-align: center;
         color: #999;
+
         &:hover {
             text-decoration: none;
             color: #fff;

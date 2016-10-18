@@ -26,44 +26,49 @@ style comment.
 */
 
 .media {
-    .media-link {
+
+    $this: &;
+
+    &-link {
         display: bslock;
         color: $color-default;
+
         &:hover {
             text-decoration: none;
-            .media-thumbnail > img {
+
+            #{$this}-thumbnail > img {
                 transform: scale(1.2);
             }
         }
     }
-    .media-thumbnail {
+    &-thumbnail {
         float: left;
         overflow: hidden;
         > img {
             transition: transform $duration $easing;
         }
     }
-    .media-body {
+    &-body {
         position: relative;
         margin-left: 220px;
     }
-    .media-heading {
+    &-heading {
         padding-right: 70px;
         font-size: 20px;
         font-weight: bold;
         margin-bottom: 12px;
     }
-    .media-date {
+    &-date {
         position: absolute;
         right: 0;
         top: 0;
     }
-    .media-icon {
+    &-icon {
         position: relative;
         top: 1px;
         margin-right: 5px;
     }
-    .media-description {
+    &-description {
         font-size: 18px;
     }
 }

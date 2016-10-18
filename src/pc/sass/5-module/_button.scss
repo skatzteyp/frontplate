@@ -24,6 +24,7 @@ style comment.
     transition-property: box-shadow, transform;
     transition-duration: $duration;
     transition-timing-function: $easing;
+
     &:hover {
         text-decoration: none;
         transform: translate3d(0, 5px, 0);
