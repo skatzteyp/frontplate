@@ -15,4 +15,28 @@ snsArray = [
         url: "#"
     }
 ];
+
+shareArray = [
+    {
+        name: "facebook",
+        link: "http://www.facebook.com/share.php?u=http://www.toshin.com/hs/",
+        onClick: "window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;",
+        attr: ""
+    }, {
+        name: "twitter",
+        link: "http://twitter.com/share?url=http://www.toshin.com/hs/&text=タイトルここに入れてください",
+        onClick: "window.open(this.href, 'TWwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;",
+        attr: ""
+    }, {
+        name: "line",
+        link: "http://line.me/R/msg/text/?タイトルここに入れてください%0D%0Ahttp://www.toshin.com/hs/",
+        onClick: "",
+        attr: 'target="_blank"'
+    }, {
+        name: "hatena",
+        link: "http://b.hatena.ne.jp/entry/http://www.toshin.com/hs/",
+        onClick: "",
+        attr: 'class="hatena-bookmark-button" data-hatena-bookmark-title="タイトルここに入れてください" data-hatena-bookmark-layout="simple" title="このエントリーをはてなブックマークに追加"'
+    }
+];
 %>

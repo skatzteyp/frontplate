@@ -1,0 +1,11 @@
+<div class="share <%= mf %>">
+    <ul class="share-list">
+        <% for(var iShare=0; iShare< shareArray.length; iShare++) { %>
+        <li class="share-item share-item-<%= shareArray[iShare].name %>">
+            <a href="<%- shareArray[iShare].link %>" <% if(shareArray[iShare].onClick !== ""){ %>onClick="<%- shareArray[iShare].onClick %>"<% } %> <%- shareArray[iShare].attr %>>
+                <%- shareArray[iShare].name %>
+            </a>
+        </li>
+        <% } %>
+    </ul>
+</div>
