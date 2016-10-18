@@ -30,8 +30,10 @@ style comment.
     $this: &;
 
     &-link {
-        display: bslock;
+        display: block;
         color: $color-default;
+        background-color: #fff;
+        padding: 20px;
 
         &:hover {
             text-decoration: none;

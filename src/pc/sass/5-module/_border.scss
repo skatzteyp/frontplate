@@ -1,0 +1,17 @@
+/*
+#overview
+border
+*/
+
+/*
+#styleguide
+border
+```
+<hr class="border">
+*/
+
+.border {
+    display: block;
+    border-top: 1px solid #000;
+    margin: 30px 0;
+}
