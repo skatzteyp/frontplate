@@ -1,10 +1,12 @@
+import CONST from '../_const.js';
+
 export default function smoothScroll() {
 
     'use strict';
 
     const HEADER_HEIGHT = 0;
 
-    let $document = $(document);
+    let $document = CONST.$document;
 
     let mStopOn = () => {
         $document.on('DOMMouseScroll', preventDefault);
@@ -25,7 +27,7 @@ export default function smoothScroll() {
             let id = $(e.currentTarget).attr('href'),
                 target = $(id).offset().top;
             mStopOn();
-            $('html, body').animate({scrollTop: target - HEADER_HEIGHT}, 500, mStopOff);
+            CONST.$htmlBody.animate({scrollTop: target - HEADER_HEIGHT}, 500, mStopOff);
             e.preventDefault();
         }
     };
