@@ -14,35 +14,52 @@ var type = "blog";
 
 
     <div class="box">
-        <%- include('module/_headline', { mf: 'headline-mb', text: 'category'}) %>
-        <%- include('module/_category', { mf: 'category-a', text: 'Business'}) %>
-        <%- include('module/_category', { mf: 'category-b', text: 'Lifehack'}) %>
-        <%- include('module/_category', { mf: 'category-c', text: 'Technology'}) %>
+        <%- include("module/_headline", { mf: "headline-mb", text: "category"}) %>
+        <%- include("module/_category", { mf: "category-a", text: "Business"}) %>
+        <%- include("module/_category", { mf: "category-b", text: "Lifehack"}) %>
+        <%- include("module/_category", { mf: "category-c", text: "Technology"}) %>
     </div>
 
-    <%- include('module/_border', {mf: ''}) %>
+    <%- include("module/_border", {mf: ""}) %>
 
     <div class="box">
-        <%- include('module/_headline', { mf: 'headline-mb', text: 'media'}) %>
+        <%- include("module/_headline", { mf: "headline-mb", text: "media"}) %>
         <% var mf = "", iMedia = 0; %>
         <% include module/_media %>
     </div>
 
-    <%- include('module/_border', {mf: ''}) %>
+    <%- include("module/_border", {mf: ""}) %>
 
     <div class="box">
-        <%- include('module/_headline', { mf: 'headline-mb', text: 'sns'}) %>
-        <%- include('module/_sns') %>
+        <%- include("module/_headline", { mf: "headline-mb", text: "sns"}) %>
+        <%- include("module/_sns") %>
     </div>
 
-    <%- include('module/_border', {mf: ''}) %>
+    <%- include("module/_border", {mf: ""}) %>
 
     <div class="box">
-        <%- include('module/_headline', { mf: 'headline-mb', text: 'button'}) %>
-        <%- include('module/_button', { tag: 'button', link: '#', mf: '', text: 'button'}) %>
-        <%- include('module/_button', { tag: 'button', link: '#', mf: 'button-main', text: 'button'}) %>
-        <%- include('module/_button', { tag: 'a', link: '#', mf: 'button-sub', text: 'button'}) %>
-        <%- include('module/_button', { tag: 'a', link: '#', mf: 'button-caution', text: 'button'}) %>
+        <%- include("module/_headline", { mf: "headline-mb", text: "button"}) %>
+
+        <p>button tag</p>
+
+        <%- include("module/_button", { tag: "button", attr: "button", mf: "", text: "button"}) %>
+        <%- include("module/_button", { tag: "button", attr: "submit", mf: "button-main", text: "button"}) %>
+
+        <p>a tag</p>
+        <%- include("module/_button", { tag: "a", attr: "#", mf: "button-sub", text: "button"}) %>
+        <%- include("module/_button", { tag: "a", attr: "#", mf: "button-caution", text: "button"}) %>
+    </div>
+
+    <%- include("module/_border", {mf: ""}) %>
+
+    <div class="box">
+        <%- include("module/_headline", { mf: "headline-mb", text: "logo"}) %>
+
+        <p>a tag</p>
+        <%- include("module/_logo", { tag: "a", link: "#", mf: "", alt: "LIG inc."}) %>
+
+        <p>div tag</p>
+        <%- include("module/_logo", { tag: "div", link: "", mf: "", alt: "LIG inc."}) %>
     </div>
 
 
