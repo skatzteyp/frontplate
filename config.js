@@ -3,12 +3,14 @@
  * タスク設定ファイル
  */
 module.exports = {
+    // Gitログに載せるよう出力先ディレクトリ
+    release: 'release/%type%',
     // 出力先ディレクトリ
     dist: 'public/%type%',
     // gulpコマンドでデフォルトで監視するディレクトリ(src/*/)
     defaultPath: 'pc',
     // 変更監視時にユニットテストも行うかどうか
-    autoTest: true,
+    autoTest: false,
     // CSSの設定
     style: {
         // node-sass(https://github.com/sass/node-sass#options)
@@ -92,12 +94,17 @@ module.exports = {
             watch: 'src/%type%/sprites/**/*',
             imagePath: '../images',
             imageDest: 'src/%type%/images',
-            cssDest: 'src/%type%/sass/sprites'
+            cssDest: 'src/%type%/sass/5-module/sprites'
         },
         // スクリプト: script
         js: {
             src: ['src/%type%/js/*.js','!src/%type%/js/_*.js'],
             dest: 'public/%type%/js'
+        },
+        // jsx: jsx
+        jsx: {
+            src: 'src/%type%/js/jsx/**/*.jsx',
+            dest: 'src/%type%/js/jsx'
         },
         // テスト: karma
         test: {
@@ -110,6 +117,10 @@ module.exports = {
         },
         // 複製: copy
         copy: [
+            {
+                from: 'src/%type%/fonts/**/*',
+                to: 'public/%type%/fonts'
+            },
             {
                 from: 'src/%type%/lib/**/*',
                 to: 'public/%type%/lib'

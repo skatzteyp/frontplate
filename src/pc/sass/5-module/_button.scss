@@ -1,0 +1,63 @@
+/*
+#overview
+button
+*/
+
+/*
+#styleguide
+button
+style comment.
+```
+<a class="button" href="">
+    <span class="button-text">Button more</span>
+</a>
+```
+*/
+
+.button {
+    display: inline-block;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 15px 40px;
+    box-shadow: 0 5px 0 darken(#333,20%);
+    transition-property: box-shadow, transform;
+    transition-duration: $duration;
+    transition-timing-function: $easing;
+    font-size: 15px;
+    line-height: 1;
+
+    &:hover {
+        text-decoration: none;
+        transform: translate3d(0, 5px, 0);
+        box-shadow: 0 0 0 darken(#333,20%);
+    }
+
+    //Modifier
+    &-main {
+        background-color: $color-main;
+        box-shadow: 0 5px 0 darken($color-main,20%);
+
+        &:hover {
+            box-shadow: 0 0 0 darken($color-main,20%);
+        }
+    }
+
+    &-sub {
+        background-color: $color-sub;
+        box-shadow: 0 5px 0 darken($color-sub,20%);
+
+        &:hover {
+            box-shadow: 0 0 0 darken($color-sub,20%);
+        }
+    }
+
+    &-caution {
+        background-color: $color-caution;
+        box-shadow: 0 5px 0 darken($color-caution,20%);
+
+        &:hover {
+            box-shadow: 0 0 0 darken($color-caution,20%);
+        }
+    }
+}

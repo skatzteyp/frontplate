@@ -1,0 +1,98 @@
+<% include const/_const %>
+<%
+var id = "components";
+var title = "";
+var description = "sample text,sample tex";
+var keywords = "word1,word2,word3";
+var type = "blog";
+%>
+<% include metadata/_head %>
+<% include layout/_l-header %>
+
+<!--start l-contents-->
+<div class="l-container u-clear">
+
+    <div class="box">
+        <%- include("module/_headline", { mf: "headline-mb", text: "button"}) %>
+
+        <p>button tag</p>
+
+        <%- include("module/_button", { tag: "button", attr: "button", mf: "", text: "button"}) %>
+        <%- include("module/_button", { tag: "button", attr: "submit", mf: "button-main", text: "button"}) %>
+
+        <p>a tag</p>
+        <%- include("module/_button", { tag: "a", attr: "#", mf: "button-sub", text: "button"}) %>
+        <%- include("module/_button", { tag: "a", attr: "#", mf: "button-caution", text: "button"}) %>
+    </div>
+
+    <%- include("module/_border", {mf: ""}) %>
+
+    <div class="box">
+        <%- include("module/_headline", { mf: "headline-mb", text: "category"}) %>
+        <%- include("module/_category", { mf: "category-a", text: "Business"}) %>
+        <%- include("module/_category", { mf: "category-b", text: "Lifehack"}) %>
+        <%- include("module/_category", { mf: "category-c", text: "Technology"}) %>
+    </div>
+
+    <%- include("module/_border", {mf: ""}) %>
+
+    <div class="box">
+        <%- include("module/_headline", { mf: "headline-mb", text: "logo"}) %>
+
+        <p>a tag</p>
+        <%- include("module/_logo", { tag: "a", link: "#", mf: "", alt: "LIG inc."}) %>
+
+        <p>div tag</p>
+        <%- include("module/_logo", { tag: "div", link: "", mf: "", alt: "LIG inc."}) %>
+    </div>
+
+    <%- include("module/_border", {mf: ""}) %>
+
+    <div class="box">
+        <%- include("module/_headline", { mf: "headline-mb", text: "input"}) %>
+
+        <p>text</p>
+        <%- include("module/_input", { mf: "", type: "text", ph: "ex) Steve Jobs"}) %>
+
+        <p>mail</p>
+        <%- include("module/_input", { mf: "", type: "email", ph: "ex) info@kisuke.com"}) %>
+    </div>
+
+    <%- include("module/_border", {mf: ""}) %>
+
+    <div class="box">
+        <%- include("module/_headline", { mf: "headline-mb", text: "textarea"}) %>
+        <%- include("module/_textarea", { mf: "", ph: "input comments"}) %>
+    </div>
+
+    <%- include("module/_border", {mf: ""}) %>
+
+    <div class="box">
+        <%- include("module/_headline", { mf: "headline-mb", text: "media"}) %>
+        <% var mf = "", iMedia = 0; %>
+        <% include module/_media %>
+    </div>
+
+    <%- include("module/_border", {mf: ""}) %>
+
+    <div class="box">
+        <%- include("module/_headline", { mf: "headline-mb", text: "sns"}) %>
+        <%- include("module/_sns") %>
+    </div>
+
+    <%- include("module/_border", {mf: ""}) %>
+
+    <div class="box">
+        <%- include("module/_headline", { mf: "headline-mb", text: "share"}) %>
+
+        <%- include("module/_share", { mf: ""}) %>
+    </div>
+
+
+
+
+</div>
+<!--end l-contents-->
+
+<% include layout/_l-footer %>
+<% include metadata/_script %>

@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+br {
+    font-size: 0;
+}
+
+::selection {
+    background: $color-main;
+    color: #fff;
+}
+
+input,
+textarea {
+    &::selection {
+        color: $color-default;
+    }
+}
+
+html {
+    font-size: 62.5%;
+    min-height: 100%;
+	/*
+    width: 100%;
+	*/
+}
+
+body {
+    font-size: $base-font-size + px;
+    line-height: $base-line-height;
+    font-family: $font-jp;
+    background: #fff;
+    color: $color-default;
+    width: 100%;
+    letter-spacing: $base-letter-spacing;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: $font-jp;
+}
+
+input,
+button,
+select,
+textarea,
+a,
+div,
+aside {
+    &:focus {
+        outline: none;
+    }
+}
+
+a {
+    color: $color-main;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.for-no-js,
+.for-old {
+    text-align: center;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    z-index: $z-max + 1;
+}
+
+.for-old {
+    display: none;
+
+    .lt-ie9 & {
+        display: block;
+    }
+}

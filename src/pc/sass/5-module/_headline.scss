@@ -1,0 +1,23 @@
+/*
+#overview
+headline
+*/
+
+/*
+#styleguide
+headline
+```
+<h1 class="headline">Headline</h1>
+*/
+
+.headline {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #000;
+
+    //Modifier
+    &-mb {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,145 @@
+<% include const/_const %>
+<%
+var id = "single";
+var title = "";
+var description = "sample text,sample tex";
+var keywords = "word1,word2,word3";
+var type = "blog";
+%>
+<% include metadata/_head %>
+<% include layout/_l-header %>
+
+<!--start l-contents-->
+<div class="l-container u-clear">
+
+    <!--start l-main-->
+    <main class="l-main" id="js-base">
+
+        <!--article area start-->
+        <div class="single-header">
+            <div class="single-header-category">
+                <p class="category category-a">Category Business</p>
+            </div>
+            <h1 class="single-header-heading">古くなった家具を好きな色に塗り替えよう! ペンキDIYのススメ。</h1>
+            <dl class="single-header-meta">
+                <dt class="single-header-author">
+                    <img src="http://placekitten.com/g/40/40" height="40" width="40" alt="">
+                    <span>Author</span>
+                </dt>
+                <dd class="single-header-date">
+                    <time datetime="2016-01-26">2016.01.26</time>
+                </dd>
+            </dl>
+            <div class="single-header-eyecatch">
+                <img src="http://placekitten.com/g/760/400" height="400" width="760" alt="">
+            </div>
+        </div>
+
+        <div class="single-body">
+            <h2>
+                (h2)ペンキDIYって？
+            </h2>
+
+            <h3>
+                (h3)ペンキ塗りの腕はプロ級！田中さんにきいてみました。田中さんにきいてみました。
+            </h3>
+
+            <p>
+                木目で囲まれたスペースを、一部塗り替えるだけでも部屋の雰囲気が変わります。 <br>
+                インテリアのイメージはできているのに、なかなか色が合う家具がみつからない……。そんな時は、ペンキDIYで自分らしい空間を作ることができます。これは本文です。
+            </p>
+            <p>
+                木目で囲まれたスペースを、一部塗り替えるだけでも部屋の雰囲気が変わります。 <br>
+                インテリアのイメージはできているのに、なかなか色が合う家具がみつからない……。そんな時は、ペンキDIYで自分らしい空間を作ることができます。これは本文です。
+            </p>
+
+            <p>
+                <a class="link" href="#" target="_blank">田中さんの人気ブログはこちら</a>
+            </p>
+            <p>
+                <a class="link" href="#">前回の記事はこちら</a>
+            </p>
+
+            <h3>
+                (h3)ペンキの上手な選び方
+            </h3>
+
+            <p>
+                <b>まずは信頼できる品質のものを(bold)</b><br>
+                各メーカーから様々なペンキが販売されていますが、<a href="#">ペンキの安全性</a> が気になるところ。<br>
+                特に<a href="#" target="_blank">こんなご家庭</a>には、環境・健康などにも考慮された<b>高品質のペンキ</b>をおすすめします。
+            </p>
+
+            <ul>
+                <li>お子さんやお年寄りがいる家庭
+                    <ul>
+                        <li>乳幼児などの幼いお子さん</li>
+                        <li>お年寄り</li>
+                        <li>体の弱い方や、妊婦など</li>
+                    </ul>
+                </li>
+                <li>ペットを飼っている家庭</li>
+                <li>匂いに敏感な方がいる家庭</li>
+                <li>これはリストのデザインです</li>
+            </ul>
+
+            <h3>
+                (h3)ペンキを塗るのにいい日ベスト3！
+            </h3>
+
+            <p>
+                こんな日がおすすめです。
+            </p>
+
+            <ol>
+                <li>晴れや曇りの日</li>
+                <li>湿度が低い日</li>
+                <li>番号付きのリスト</li>
+            </ol>
+
+            <h2>
+                ここを抑えれば大丈夫！ここを抑えれば大丈夫！ 基本的なペンキの塗り方(h2)
+            </h2>
+
+            <dl>
+                <dt>Point</dt>
+                <dd>
+                    二度塗りをするときは、先に塗ったペンキが完全に乾いてから塗りましょう。先に塗ったペンキが完全に乾いてから塗りましょう。これは注釈文です。
+                </dd>
+            </dl>
+
+            <h3>Responsive Movie (It will always be resize for window size with the rate 16:9)<br>
+                It requires &lt;div class="movie"&gt;...&lt;/div&gt;</h3>
+
+            <div class="movie">
+                <iframe width="500" height="281" src="https://www.youtube.com/embed/WuS80BsFjr4?feature=oembed" allowfullscreen></iframe>
+            </div>
+
+            <h3>The fixed movie</h3>
+
+            <iframe width="500" height="281" src="https://www.youtube.com/embed/WuS80BsFjr4?feature=oembed" allowfullscreen></iframe>
+
+            <blockquote>
+                <p>
+                    塗料（とりょう）とは、対象物を保護・美装、または、独自な機能を付与するために、その表面に塗り付ける材料のこと。引用文です。
+                </p>
+                <small>
+                    出典： <a href="#" target="_blank">Wikipedia</a>
+                </small>
+            </blockquote>
+
+        </div>
+        <!--article area end-->
+
+        <%- include('module/_sns') %>
+
+    </main>
+    <!--end l-main-->
+
+    <% include layout/_l-sidebar %>
+
+</div>
+<!--end l-contents-->
+
+<% include layout/_l-footer %>
+<% include metadata/_script %>
