@@ -62,6 +62,27 @@ var type = "blog";
         <%- include("module/_logo", { tag: "div", link: "", mf: "", alt: "LIG inc."}) %>
     </div>
 
+    <%- include("module/_border", {mf: ""}) %>
+
+    <div class="box">
+        <%- include("module/_headline", { mf: "headline-mb", text: "input"}) %>
+
+        <p>text</p>
+        <%- include("module/_input", { mf: "", type: "text", ph: "ex) Steve Jobs"}) %>
+
+        <p>mail</p>
+        <%- include("module/_input", { mf: "", type: "email", ph: "ex) info@kisuke.com"}) %>
+    </div>
+
+    <%- include("module/_border", {mf: ""}) %>
+
+    <div class="box">
+        <%- include("module/_headline", { mf: "headline-mb", text: "textarea"}) %>
+        <%- include("module/_textarea", { mf: "", ph: "input comments"}) %>
+    </div>
+
+
+
 
 </div>
 <!--end l-contents-->

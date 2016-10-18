@@ -1,0 +1,22 @@
+/*
+#overview
+textarea
+*/
+
+/*
+#styleguide
+textarea
+```
+<textarea class="textarea" placeholder="" name="" cols="30" rows="10"></textarea>
+```
+*/
+
+.textarea {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 100%;
+    padding: 15px;
+    height: 200px;
+    line-height: 1.5;
+    cursor: pointer;
+}
