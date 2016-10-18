@@ -3,18 +3,18 @@
     <div class="l-container u-clear">
 
         <div class="l-header-left">
-            <%- include('module/_logo', { tag: 'a', link: '#', mf: '', alt: 'LIG inc.'}) %>
+            <%- include('module/_logo', { tag: 'a', link: './', mf: '', alt: 'LIG inc.'}) %>
         </div>
 
 
         <div class="l-header-right">
             <nav class="nav">
-                <div class="nav-inner l-grid l-grid-col4">
+                <div class="nav-inner l-grid">
                     <ul class="nav-list l-grid-inner">
                         <% for(var iNav=0; iNav< navArray.length; iNav++) { %>
                         <li class="nav-item l-grid-item">
-                            <a class="nav-link<% if(iNav === 0){ %> nav-link-current<% } %>" href="#">
-                                <%= navArray[iNav] %>
+                            <a class="nav-link<% if(iNav === 0){ %> nav-link-current<% } %>" href="<%= navArray[iNav].link %>">
+                                <%= navArray[iNav].name %>
                             </a>
                         </li>
                         <% } %>
