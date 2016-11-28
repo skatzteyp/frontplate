@@ -13,7 +13,6 @@ let config = require('./gulp/config');
 gulp.task('watch', () => {
     gulp.watch(config.path.ejs.watch, ['ejs']);
     gulp.watch(config.path.html.src, ['html']);
-    gulp.watch(config.path.html.src, ['prettify']);
     gulp.watch(config.path.jsx.src, ['jsx']);
     gulp.watch(config.path.style.watch, ['style']);
     gulp.watch(config.path.sprite.watch, ['sprite','style', 'copy','styleguide']);
@@ -32,7 +31,7 @@ gulp.task('watch', () => {
  * ビルドタスク
  */
 gulp.task('build', ['clean'], (callback) => {
-    return runSequence('sprite', ['ejs', 'jsx', 'script', 'style', 'copy','styleguide'], callback);
+    return runSequence('sprite', ['ejs', 'prettify', 'jsx', 'script', 'style', 'copy','styleguide'], callback);
 });
 
 /**
