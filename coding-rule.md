@@ -33,9 +33,9 @@
 +-sp/
 ```
 
-##Basic
+## Basic
 
-###Write code with SMACSS
+### Write code with SMACSS
 https://smacss.com/
 
 ### Avoid many nest
@@ -64,9 +64,9 @@ OK
 }
 ```
 
-##Class
+## Class
 
-###Use chain case only, and Don't use uppercase
+### Use chain case only, and Don't use uppercase
 
 NG
 ```
@@ -82,7 +82,7 @@ OK
 <div class="post-item"></div>
 ```
 
-###Don't use id for style
+### Don't use id for style
 
 NG
 ```
@@ -94,7 +94,7 @@ OK
 <header classs="l-header"></header>
 ```
 
-###But you can use id for a hook of JavaScript
+### But you can use id for a hook of JavaScript
 
 OK
 ```
@@ -103,7 +103,7 @@ OK
 <header classs="l-header js-sticky"></header>
 ```
 
-###Don't feel free to omit a name of class
+### Don't feel free to omit a name of class
 
 NG
 ```
@@ -115,7 +115,7 @@ OK
 <a href="" class="button btn-error">...</a>
 ```
 
-###But you can omit a name of class if you tell us & create lists in advance
+### But you can omit a name of class if you tell us & create lists in advance
 
 Ex)
 ```
@@ -124,33 +124,33 @@ md - middle
 lg - large
 ```
 
-###Add prefix all class except modules
+### Add prefix all class except modules
 
 + layout = "l-"
 + utility = "u-"
 + Hooks of JavaScript = "js-"
 + State = "is-"
 
-###extend
+### extend
 We ban using `@extend' in Sass for avoiding a spaghetti code
 
-##Value
+## Value
 
 + px & % as possible as.
 + recommend　relative value as possible as,
 + use px on font-size
 + don't use em, vm, rem without a reason.
 
-###px or %
+### px or %
 width, height, padding, margin, top, left, right, bottom, transform
 
-###px only
+### px only
 font-size 
 
-###point( ex)1.5 )
+### point( ex)1.5 )
 line-height, opacity
 
-##Color
+## Color
 
 Use hexadecimal & lowercase only 
 
@@ -170,7 +170,7 @@ OK
 }
 ```
 
-##git
+## git
 We use git in accordance with git-flow.  
 https://www.atlassian.com/en/git/workflows#!workflow-gitflow  
 https://www.atlassian.com/ja/git/workflows#!workflow-gitflow  
