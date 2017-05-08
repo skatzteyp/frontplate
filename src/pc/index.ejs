@@ -1,4 +1,4 @@
-<% include const/_const %>
+<% include view/const/_const %>
 <%
 var id = "index";
 var title = "";
@@ -6,8 +6,8 @@ var description = "sample text,sample tex";
 var keywords = "word1,word2,word3";
 var type = "blog";
 %>
-<% include metadata/_head %>
-<% include layout/_l-header %>
+<% include view/metadata/_head %>
+<% include view/layout/_l-header %>
 
 <!--start l-contents-->
 <div class="l-container u-clear">
@@ -20,7 +20,7 @@ var type = "blog";
                 <% for(var iMedia = 0; iMedia < mediaArray.length; iMedia++) { %>
                 <li>
                     <% var mf = ""; %>
-                    <% include module/_media %>
+                    <% include view/module/_media %>
                 </li>
                 <% } %>
             </ul>
@@ -34,10 +34,10 @@ var type = "blog";
     </main>
     <!--end l-main-->
 
-    <% include layout/_l-sidebar %>
+    <% include view/layout/_l-sidebar %>
 
 </div>
 <!--end l-contents-->
 
-<% include layout/_l-footer %>
-<% include metadata/_script %>
+<% include view/layout/_l-footer %>
+<% include view/metadata/_script %>
