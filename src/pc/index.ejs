@@ -9,8 +9,15 @@ var type = "blog";
 <% include view/metadata/_head %>
 <% include view/layout/_l-header %>
 
+
 <!--start l-contents-->
 <div class="l-container u-clear">
+    <?php $phpVar = 'This is a PHP string'; ?>
+    <?php echo $phpVar; ?>
+    <br>
+    <?php include './test.php'; ?>
+    <br>
+    <% include ./test2 %>
 
     <!--start l-main-->
     <main class="l-main">
