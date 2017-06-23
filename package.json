@@ -13,7 +13,7 @@
     "build": "frp build",
     "build-php": "frp build --config frp-php.config.js",
     "serve": "frp serve",
-    "serve-php": "php -S 127.0.0.1:4000 -t public/pc & frp serve --config frp-php.config.js -t",
+    "serve-php": "docker-compose up & frp serve --config frp-php.config.js -t",
     "production": "frp build -p",
     "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -w -s -r 0"
   },
